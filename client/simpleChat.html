@@ -1,0 +1,21 @@
+<head>
+  <title>Simple Chat</title>
+</head>
+
+<body>
+  {{> chatInputTemplate}}
+  <hr />
+  {{> messagesTemplate}}
+</body>
+
+<template name="chatInputTemplate">
+  <h1>Super Simple Chatroom</h1>
+  <input id="chatInput" type="text" />
+</template>
+
+<template name="messagesTemplate">
+  {{#each messages}}
+  <p>{{msg}}</p>
+  {{/each}}
+</template>
+
